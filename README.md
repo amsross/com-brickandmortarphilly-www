@@ -1,4 +1,4 @@
-#[methodcollective.com](http://www.methodcollective.com) [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/) [![Build Status](https://travis-ci.org/amsross/com-methodcollective-www.png?branch=master)](https://travis-ci.org/amsross/com-methodcollective-www)
+#[brickandmortarphilly.com](http://www.brickandmortarphilly.com) [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
 1. Install global dependencies
 	```

@@ -1,5 +1,5 @@
 {
-  "name": "com-methodcollective-www",
+  "name": "com-brickandmortarphilly-www",
   "version": "0.0.1-a",
   "private": true,
   "scripts": {
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/amsross/com-methodcollective-www"
+    "url": "https://github.com/amsross/com-brickandmortarphilly-www"
   },
   "author": "Matt Ross <matt@mattross.io>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/amsross/com-methodcollective-www/issues"
+    "url": "https://github.com/amsross/com-brickandmortarphilly-www/issues"
   },
-  "homepage": "https://github.com/amsross/com-methodcollective-www",
+  "homepage": "https://github.com/amsross/com-brickandmortarphilly-www",
   "dependencies": {},
   "devDependencies": {
     "jpegtran-bin": "0.2.8",

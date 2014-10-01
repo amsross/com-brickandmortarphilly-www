@@ -5,7 +5,7 @@ lsi: false
 # custom settings
 author: Matt Ross
 author_email: matt@mattross.io
-description: method collective
+description: brick and mortar
 destination: ./_site
 exclude:
   - package.json
@@ -16,8 +16,8 @@ gems:
   - jekyll-sitemap
 keys:
   ga: false
-name: METHOD COLLECTIVE
+name: BRICK AND MORTAR
 permalink: pretty
 source: .
 timezone: America/New_York
-url: http://www.methodcollective.com
+url: http://www.brickandmortarphilly.com
