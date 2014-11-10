@@ -10,24 +10,29 @@
 	<?php
 		do_action('get_header');
 		get_template_part('templates/header');
+
+		global $post;
+		$args = array(
+			'sort_order'  => 'ASC',
+			'sort_column' => 'menu_order',
+		);
+		$pages = get_pages($args);
+
+		$oddEven = 'odd';
+		foreach ($pages as $post) : setup_postdata($post);
+
+			$templateDir = get_post_meta(get_the_ID(), '_wp_page_template', true) === 'default'
+				? get_template_directory() . '/page.php'
+				: get_template_directory() . '/' . get_post_meta(get_the_ID(), '_wp_page_template', true);
+
+			include $templateDir;
+		endforeach;
+		wp_reset_postdata();
+
+		get_template_part('templates/footer');
+
+		wp_footer();
 	?>
-
-	<div class="wrap container" role="document">
-		<div class="content row">
-			<main class="main" role="main">
-				<?php include roots_template_path(); ?>
-			</main><!-- /.main -->
-			<?php if (roots_display_sidebar()) : ?>
-				<aside class="sidebar" role="complementary">
-					<?php include roots_sidebar_path(); ?>
-				</aside><!-- /.sidebar -->
-			<?php endif; ?>
-		</div><!-- /.content -->
-	</div><!-- /.wrap -->
-
-	<?php get_template_part('templates/footer'); ?>
-
-	<?php wp_footer(); ?>
 
 </body>
 </html>
