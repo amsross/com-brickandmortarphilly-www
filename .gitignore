@@ -1,0 +1,22 @@
+# Include your project-specific ignores in this file
+# Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
+*.log
+*.swp
+*.tmp
+*_log
+*~
+.env
+.ftppass
+.sublime-*
+.tmp
+_site
+assets/css/*main*.css
+assets/css/main.css.map
+assets/js/*scripts*.js
+assets/js/vendor/modernizr.min.js
+assets/manifest.json
+assets/vendor/*
+bower_components
+node_modules
+phpmyadmin
+Thumbs.db
