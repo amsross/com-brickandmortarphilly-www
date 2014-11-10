@@ -20,3 +20,5 @@ function roots_wp_title($title) {
   return $title;
 }
 add_filter('wp_title', 'roots_wp_title', 10);
+
+require_once dirname( __FILE__ ) . '/class-tgm-plugin-activation-config.php';
