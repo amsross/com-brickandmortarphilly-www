@@ -127,6 +127,14 @@ module.exports = function(grunt) {
       }
     },
     watch: {
+      php: {
+        files: [
+          '*.php',
+          '**/*.php',
+          '!lib/scripts.php',
+        ],
+        tasks: []
+      },
       less: {
         files: [
           'assets/less/*.less',
@@ -145,7 +153,9 @@ module.exports = function(grunt) {
         // Browser live reloading
         // https://github.com/gruntjs/grunt-contrib-watch#live-reloading
         options: {
-          livereload: false
+          livereload: {
+            port: 4002
+          },
         },
         files: [
           'assets/css/main.css',
@@ -165,7 +175,8 @@ module.exports = function(grunt) {
     'jshint',
     'less:dev',
     'autoprefixer:dev',
-    'concat'
+    'concat',
+    'watch',
   ]);
   grunt.registerTask('build', [
     'jshint',
@@ -173,6 +184,6 @@ module.exports = function(grunt) {
     'autoprefixer:build',
     'uglify',
     'modernizr',
-    'version'
+    'version',
   ]);
 };
