@@ -1,0 +1,18 @@
+.wrap {
+	&.container,
+	&.container-fluid {
+		&.even,
+		&.odd {
+			&:first-of-type {
+				margin-top: (@grid-gutter-width / 2);
+			}
+			background-attachment: fixed;
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			margin: (@grid-gutter-width) (@grid-gutter-width / 2) (@grid-gutter-width / 2);
+			min-height: 725px;
+			outline: 1px solid rgba(0,0,0,0.25);
+		}
+	}
+}

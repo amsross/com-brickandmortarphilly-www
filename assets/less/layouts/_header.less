@@ -1,1 +1,37 @@
-.banner { }
+.banner {
+	@media (min-width: @screen-sm-min) {
+		height: 0;
+		min-height: 0;
+		.navbar-collapse {
+			display: table !important;
+			width: 100%;
+			&.affix-top {
+				visibility: hidden !important;
+			}
+			&.affix {
+				margin-top: (@grid-gutter-width * 1.5);
+			}
+			> ul {
+				display: table-row;
+				float: none;
+				text-align: center;
+				li {
+					display: table-cell;
+					float: none;
+					a {
+						font-weight: bold;
+						text-transform: uppercase;
+						&:hover {
+							text-decoration: underline;
+						}
+					}
+					&.active {
+						a {
+							text-decoration: underline;
+						}
+					}
+				}
+			}
+		}
+	}
+}
